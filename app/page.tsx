@@ -1,11 +1,11 @@
 import React from 'react'
-import Hero from '../components/Hero'
-import Features from '../components/Features'
-import Screenshots from '../components/Screenshots'
-import Pricing from '../components/Pricing'
-import Team from '../components/Team'
-import CTA from '../components/CTA'
-import Footer from '../components/Footer'
+import Hero from '../components/Hero.tsx'
+import Features from '../components/Features.tsx'
+import Screenshots from '../components/Screenshots.tsx'
+import Pricing from '../components/Pricing.tsx'
+import Team from '../components/Team.tsx'
+import CTA from '../components/CTA.tsx'
+import Footer from '../components/Footer.tsx'
 
 
 export default function Home() {
