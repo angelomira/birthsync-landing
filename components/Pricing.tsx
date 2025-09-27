@@ -3,8 +3,8 @@ import React from 'react'
 
 
 const plans = [
-    { name: 'Free', price: '0', features: ['Напоминания', 'Ограниченные анкеты', 'Реклама'] },
-    { name: 'Pro', price: '99 ₽/мес', features: ['Расширенные анкеты', 'AI-подбор', 'Без рекламы'] },
+    { name: 'Free', price: '0', features: ['Напоминания', 'Базовые анкеты', 'Реклама'] },
+    { name: 'Pro', price: '99 ₽/мес', features: ['Продвинутые анкеты', 'AI-подбор', 'Без рекламы'] },
 ]
 
 

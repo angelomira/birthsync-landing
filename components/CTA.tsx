@@ -1,10 +1,13 @@
 'use client'
 import React, { useState } from 'react'
+import Modal from './Modal.tsx'
 
 
 export default function CTA() {
     const [loading, setLoading] = useState(false)
     const [success, setSuccess] = useState<null | string>(null)
+    const [modalOpen, setModalOpen] = useState(false)
+    
 
 
     async function onSubmit(e: React.FormEvent) {
@@ -43,7 +46,8 @@ export default function CTA() {
                 <input required type="email" name="email" placeholder="Email" className="p-3 rounded-lg border" />
                 <textarea name="message" rows={4} placeholder="Сообщение" className="p-3 rounded-lg border"></textarea>
                 <div className="flex items-center gap-4">
-                    <button type="submit" className="btn-primary" disabled={loading}>{loading ? 'Отправка...' : 'Отправить'}</button>
+                    <button type="submit"  onClick={() => setModalOpen(true)} className="btn-primary" disabled={loading}>{loading ? 'Отправка...' : 'Отправить'}</button>
+                    <Modal open={modalOpen} onClose={() => setModalOpen(false)} />
                     {success && <div className="text-green-600">{success}</div>}
                 </div>
             </form>

@@ -7,14 +7,16 @@ export default {
     theme: {
         extend: {
             colors: {
-                'bs-pink': '#FBD3D9',
-                'bs-teal': '#2DD4BF',
-                'bs-purple': '#6D28D9',
-                'bs-dark': '#0F172A'
+                brandPurple: '#d791ff',
+                brandBlue: '#3A5BC4',
+                brandGreen: '#CDF4AF',
+                brandWhite: '#ffffff',
+                brandBlack: '#000000',
             },
             fontFamily: {
-                sans: ['Inter', 'ui-sans-serif', 'system-ui']
-            }
+                sans: ['"Advent Pro"', 'ui-sans-serif', 'system-ui'],
+                mono: ['"Source Code Pro"', 'ui-monospace', 'SFMono-Regular'],
+            },
         },
     },
     plugins: [],
