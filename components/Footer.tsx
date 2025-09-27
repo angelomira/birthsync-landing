@@ -9,8 +9,6 @@ export default function Footer() {
                 <div className="flex items-center gap-3">
                     <div className="text-sm text-slate-600">© {new Date().getFullYear()} Birthsync — Все права защищены</div>
                 </div>
-
-
                 <div className="text-sm text-slate-600">Контакты: +7 (985) 895-03-05 · @ANGELOMIRA</div>
             </div>
         </footer>

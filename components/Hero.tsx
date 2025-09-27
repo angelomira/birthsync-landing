@@ -36,7 +36,7 @@ export default function Hero() {
 
 
                 <div className="flex justify-center">
-                    <div className="rounded-3xl overflow-hidden bg-white" style={{ width: 360 }}>
+                    <div className="rounded-3xl overflow-hidden bg-white mt-0 mb-12" style={{ width: 480 }}>
                         <img src="/Frame 24.svg" alt="App logo" />
                     </div>
                 </div>
