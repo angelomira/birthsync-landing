@@ -16,7 +16,7 @@ export default function Hero() {
 
 
                     <div className="mt-8 flex items-center gap-4">
-                        <button onClick={() => setModalOpen(true)} className="btn-primary mt-6">Попробовать</button>
+                        <button onClick={() => setModalOpen(true)} className="btn-primary">Попробовать</button>
 <Modal open={modalOpen} onClose={() => setModalOpen(false)} />
                         <a href="#features" className="btn-ghost">Узнать больше</a>
                     </div>
@@ -36,7 +36,7 @@ export default function Hero() {
 
 
                 <div className="flex justify-center">
-                    <div className="card-shadow rounded-3xl overflow-hidden bg-white p-6" style={{ width: 360 }}>
+                    <div className="rounded-3xl overflow-hidden bg-white" style={{ width: 360 }}>
                         <img src="/Frame 24.svg" alt="App logo" />
                     </div>
                 </div>

@@ -22,7 +22,7 @@ export default function Team() {
             <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-6">
                 {members.map((m) => (
                     <div key={m.name} className="p-4 text-center bg-white rounded-xl card-shadow">
-                        <div className="flex items-center justify-center h-20 w-20 rounded-full bg-bs-purple text-white mx-auto font-bold">{m.name.split(' ')[0][0]}{m.name.split(' ')[1] ? m.name.split(' ')[1][0] : ''}</div>
+                        <div className="flex items-center justify-center h-20 w-20 rounded-full bg-brandBlue text-white mx-auto font-bold">{m.name.split(' ')[0][0]}{m.name.split(' ')[1] ? m.name.split(' ')[1][0] : ''}</div>
                         <div className="mt-3 font-semibold">{m.name}</div>
                         <div className="text-sm text-slate-500">{m.role}</div>
                     </div>
