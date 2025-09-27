@@ -10,10 +10,9 @@ body,
 }
 
 body {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial;
-  background: linear-gradient(180deg, #ffffff 0%, #fef8fb 100%);
-  color: #0f172a;
+  font-family: 'Advent Pro', sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
+  color: #000000;
 }
 
 /* Hero confetti subtle */

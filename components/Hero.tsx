@@ -1,8 +1,11 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from './Modal.tsx'
 
 
 export default function Hero() {
+    const [modalOpen, setModalOpen] = useState(false)
+
     return (
         <section className="relative section">
             <div className="hero-confetti"></div>
@@ -13,7 +16,8 @@ export default function Hero() {
 
 
                     <div className="mt-8 flex items-center gap-4">
-                        <a href="#contact" className="btn-primary">Попробовать бесплатно</a>
+                        <button onClick={() => setModalOpen(true)} className="btn-primary mt-6">Попробовать</button>
+<Modal open={modalOpen} onClose={() => setModalOpen(false)} />
                         <a href="#features" className="btn-ghost">Узнать больше</a>
                     </div>
 
@@ -33,7 +37,7 @@ export default function Hero() {
 
                 <div className="flex justify-center">
                     <div className="card-shadow rounded-3xl overflow-hidden bg-white p-6" style={{ width: 360 }}>
-                        <img src="/hero-illustration.svg" alt="App mock" />
+                        <img src="/Frame 24.svg" alt="App logo" />
                     </div>
                 </div>
             </div>
