@@ -14,13 +14,13 @@ export default function Screenshots() {
                 {/* Desktop grid */}
                 <div className="hidden md:flex items-center justify-center gap-6">
                     <div className="w-56 p-4 rounded-2xl bg-white card-shadow bg-gradient-to-b from-brandPurple via-brandBlue to-brandGreen">
-                        <img src="/image1.png" alt="App logo" />
+                        <img className="rounded-2xl" src="/image1.png" alt="App logo" />
                     </div>
                     <div className="w-56 p-4 rounded-2xl bg-white card-shadow bg-gradient-to-b from-brandGreen via-brandPurple to-brandBlue">
-                        <img src="/image2.png" alt="App logo" />
+                        <img className="rounded-2xl" src="/image2.png" alt="App logo" />
                     </div>
                     <div className="w-56 p-4 rounded-2xl bg-white card-shadow bg-gradient-to-b from-brandBlue via-brandGreen to-brandPurple">
-                        <img src="/image3.png" alt="App logo" />
+                        <img className="rounded-2xl" src="/image3.png" alt="App logo" />
                     </div>
                 </div>
 

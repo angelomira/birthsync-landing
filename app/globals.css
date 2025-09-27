@@ -38,11 +38,11 @@ body {
 }
 
 .btn-primary {
-  @apply inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-brandPurple text-white font-semibold shadow-md;
+  @apply inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-brandBlue text-white font-semibold shadow-md hover:bg-brandBlue transition;
 }
 
 .btn-ghost {
-  @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 text-brandBlack;
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-gray-300 text-brandBlack hover:bg-brandGreen/20 transition;
 }
 
 .section {
