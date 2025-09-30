@@ -4,7 +4,7 @@ import Header from '../components/Header.tsx'
 
 
 export const metadata = {
-    title: 'Birthsync — Помощник по подаркам и напоминаниям',
+    title: 'Birthsync — ваш персональный помощник по подаркам.',
     description: 'Умный бот, который поможет запоминать дни рождения, хранить предпочтения и подбирать подарки.'
 }
 
