@@ -11,7 +11,7 @@ export default function Hero() {
             <div className="hero-confetti"></div>
             <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Birthsync — ваш персональной помощник по подаркам.</h1>
+                    <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Birthsync — мы знаем что подарить.</h1>
                     <p className="mt-6 text-slate-700 max-w-xl">Умный бот, который поможет запоминать дни рождения друзей, хранить их предпочтения и подбирать идеальные подарки с помощью AI.</p>
 
 
@@ -36,7 +36,7 @@ export default function Hero() {
 
 
                 <div className="flex justify-center">
-                    <div className="rounded-3xl overflow-hidden bg-white mt-0 mb-12" style={{ width: 480 }}>
+                    <div className="rounded-3xl overflow-hidden bg-white mt-0 mb-12" style={{ width: 480, paddingBottom: '1em' }}>
                         <img src="/Frame 24.svg" alt="App logo" />
                     </div>
                 </div>

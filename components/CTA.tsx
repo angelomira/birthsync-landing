@@ -20,11 +20,13 @@ export default function CTA() {
             message: form.get('message'),
         }
 
-
         try {
             const res = await fetch('/api/contact', { method: 'POST', body: JSON.stringify(body) })
             const json = await res.json()
-            if (json.ok) setSuccess('Спасибо! Мы получили ваше сообщение.')
+            if (json.ok) {
+                setSuccess('Спасибо! Мы получили ваше сообщение.')
+                setModalOpen(true)
+            }
         } catch (err) {
             console.error(err)
         } finally {
@@ -46,7 +48,7 @@ export default function CTA() {
                 <input required type="email" name="email" placeholder="Email" className="p-3 rounded-lg border" />
                 <textarea name="message" rows={4} placeholder="Сообщение" className="p-3 rounded-lg border"></textarea>
                 <div className="flex items-center gap-4">
-                    <button type="submit"  onClick={() => setModalOpen(true)} className="btn-primary" disabled={loading}>{loading ? 'Отправка...' : 'Отправить'}</button>
+                    <button type="submit" className="btn-primary" disabled={loading}>{loading ? 'Отправка...' : 'Отправить'}</button>
                     <Modal open={modalOpen} onClose={() => setModalOpen(false)} />
                     {success && <div className="text-green-600">{success}</div>}
                 </div>
